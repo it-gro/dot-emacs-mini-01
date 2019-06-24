@@ -2,25 +2,30 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;$Copyright: Bruno Grossniklaus $
 ;;$License:   GPL $
-;;$Version:   26.1 $
+;;$Version:   25.2 $
 ;;$Code:      emacs elisp $
 ;;$Writer:    Bruno Grossniklaus $
-;;$Remark:    Emacs for GNU-Emacs version >= 26.1 $
+;;$Remark:    Emacs for GNU-Emacs version >= 25.2 $
 ;;$Creation:  1992-08-27 $
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Commentary:
-;; my "mini" Emacs config
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; it-gro "mini" Emacs config
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Code:
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;* colors
 ;; see list of colors with M-x list-colors-display
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(set-background-color "black")
-(set-foreground-color "white")
+(load-theme 'manoj-dark)
+;;(load-theme 'tango)
+
+;;(set-background-color "black")
+;;(set-foreground-color "white")
 
 ;;(setq default-frame-alist
 ;;      (append '(
@@ -92,6 +97,7 @@
  '(electric-indent-mode nil)
  '(global-hl-line-mode t)
  '(global-linum-mode t)
+ '(inhibit-startup-message t)
  '(js-indent-level 2)
  '(powershell-indent 2)
  '(python-indent-offset 2)
