@@ -101,6 +101,7 @@
  '(js-indent-level 2)
  '(powershell-indent 2)
  '(python-indent-offset 2)
+ '(python-shell-interpreter "python3")
  '(ring-bell-function (quote ignore))
  '(show-paren-mode 1)
  '(sql-product (quote mysql))
