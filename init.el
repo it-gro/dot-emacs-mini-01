@@ -21,7 +21,7 @@
 ;; see list of colors with M-x list-colors-display
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load-theme 'manoj-dark)
+;;(load-theme 'manoj-dark)
 ;;(load-theme 'tango)
 
 ;;(set-background-color "black")
