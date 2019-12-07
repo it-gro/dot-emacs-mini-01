@@ -17,6 +17,35 @@
 ;;; Code:
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;* Bootstrap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+  '("melpa" . "https://melpa.org/packages/")
+  )
+
+(unless package--initialized (package-initialize))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package)
+  )
+
+(require 'use-package)
+(setq
+  use-package-always-ensure t    ;; may be disabled after first (long taking) start
+  use-package-verbose t
+  )
+
+(use-package elpy
+	:ensure t
+	:defer t
+	:init
+	(advice-add 'python-mode :before 'elpy-enable)
+	)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;* colors
 ;; see list of colors with M-x list-colors-display
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
