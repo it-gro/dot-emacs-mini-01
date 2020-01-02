@@ -53,8 +53,14 @@
 ;;(load-theme 'manoj-dark)
 ;;(load-theme 'tango)
 
-;;(set-background-color "black")
-;;(set-foreground-color "white")
+(setq default-frame-alist
+			(append '(
+								(background-color . "white")
+								(foreground-color . "black")
+								(cursor-color			. "blue")
+								)
+							)
+			)
 
 ;;(setq default-frame-alist
 ;;      (append '(
@@ -64,6 +70,9 @@
 ;;                )
 ;;              )
 ;;      )
+
+;;(set-background-color "black")
+;;(set-foreground-color "white")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;* show line and col pos in modeline
