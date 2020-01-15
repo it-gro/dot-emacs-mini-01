@@ -37,6 +37,16 @@
   use-package-verbose t
   )
 
+(use-package editorconfig
+  :config
+  (editorconfig-mode 1)
+  )
+
+(use-package hungry-delete
+  :init
+  (global-hungry-delete-mode)
+  )
+
 (use-package elpy
 	:ensure t
 	:defer t
