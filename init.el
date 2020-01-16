@@ -54,6 +54,13 @@
 	(advice-add 'python-mode :before 'elpy-enable)
 	)
 
+(if (not (memq window-system '(win32 w32)))
+		(progn
+			(use-package lxd-tramp	 :ensure t)
+			(use-package vagrant-tramp :ensure t)
+			)
+	)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;* colors
