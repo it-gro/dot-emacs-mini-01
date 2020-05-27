@@ -160,7 +160,7 @@
  '(inhibit-startup-message t)
  '(js-indent-level 2)
  '(powershell-indent 2)
- '(python-indent-offset 2)
+ '(python-indent-offset 4)
  '(python-shell-interpreter "python3")
  '(ring-bell-function (quote ignore))
  '(show-paren-mode 1)
