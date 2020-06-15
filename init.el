@@ -48,18 +48,18 @@
   )
 
 (use-package elpy
-	:ensure t
-	:defer t
-	:init
-	(advice-add 'python-mode :before 'elpy-enable)
-	)
+  :ensure t
+  :defer t
+  :init
+  (advice-add 'python-mode :before 'elpy-enable)
+  )
 
 (if (not (memq window-system '(win32 w32)))
-		(progn
-			(use-package lxd-tramp	 :ensure t)
-			(use-package vagrant-tramp :ensure t)
-			)
-	)
+    (progn
+      (use-package lxd-tramp   :ensure t)
+      (use-package vagrant-tramp :ensure t)
+      )
+  )
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -70,23 +70,23 @@
 ;;(load-theme 'manoj-dark)
 ;;(load-theme 'tango)
 
-(setq default-frame-alist
-			(append '(
-								(background-color . "white")
-								(foreground-color . "black")
-								(cursor-color			. "blue")
-								)
-							)
-			)
-
 ;;(setq default-frame-alist
 ;;      (append '(
-;;                (background-color . "black")
-;;                (foreground-color . "white")
-;;                (cursor-color     . "orange")
+;;                (background-color . "white")
+;;                (foreground-color . "black")
+;;                (cursor-color     . "blue")
 ;;                )
 ;;              )
 ;;      )
+
+(setq default-frame-alist
+      (append '(
+                (background-color . "black")
+                (foreground-color . "white")
+                (cursor-color     . "orange")
+                )
+              )
+      )
 
 ;;(set-background-color "black")
 ;;(set-foreground-color "white")
